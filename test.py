@@ -20,7 +20,7 @@ class FaceThread(threading.Thread):
 			for self._rect in self._facerect:
 				cv2.rectangle(self._frame, tuple(self._rect[0:2]),tuple(self._rect[0:2] + self._rect[2:4]), self._color, thickness=2)
 			self._now = datetime.now().strftime('%Y%m%d%H%M%S')
-			self._image_path = self._now + 'test.jpg'
+			self._image_path = self._now + '.jpg'
 			cv2.imwrite(self._image_path, self._frame)
 cap = cv2.VideoCapture(0)
 

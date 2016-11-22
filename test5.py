@@ -53,5 +53,7 @@ while(1):
     old_gray = frame_gray.copy()
     p0 = good_new.reshape(-1,1,2)
 
+cap = cv2.VideoCapture(0)
+
 cv2.destroyAllWindows()
 cap.release()
